@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class evenorodd{
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Size of Array");
+		int n = sc.nextInt();
+		int num[]= new int[n];
+		ArrayList<Integer>even =new ArrayList<>();
+		ArrayList<Integer>odd = new ArrayList<>();
+		for(int i=0; i<n; i++) {
+			num[i]=sc.nextInt();
+			
+			if(num[i]%2==0) {
+				 even.add(num[i]);
+			}
+			
+			else {
+				odd.add(num[i]);
+			}
+		}
+		
+		System.out.println(even);
+		System.out.println(odd);
+	}
+}
